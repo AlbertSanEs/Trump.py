@@ -1,0 +1,14 @@
+{
+  "Fake Bussiness": {
+    "user": false,
+    "password": false,
+    "ip": "172.16.3.24",
+    "port": 21707
+  },
+  "Negoci Fals": {
+    "user": false,
+    "password": false,
+    "ip": "172.16.7.9",
+    "port": 21707
+  }
+}

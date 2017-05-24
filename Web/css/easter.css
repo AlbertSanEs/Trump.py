@@ -1,0 +1,33 @@
+body {
+    background-color: #222526;
+}
+
+#sillyjedi1 {
+    background-image: url(img/sillyjedi3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 320px;
+    margin: 5% 15%;
+    position: absolute;
+}
+
+#sillyjedi2 {
+    background-image: url(img/sillyjedi2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 320px;
+    margin: 5% 15%;
+    position: absolute;
+}
+
+#sillyjedi3 {
+    background-image: url(img/sillyjedi1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 320px;
+    margin: 5% 15%;
+    position: absolute;
+}

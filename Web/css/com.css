@@ -1,0 +1,61 @@
+@font-face {
+    font-family: MonoF;
+    src: url("../font/Monofonto.ttf");
+}
+
+* {
+  font-family: MonoF;
+}
+
+html, body {
+    background-color: #000000 !important;
+}
+.terminal{
+    font-family: Ubuntu Mono;
+    font-size: 16px;
+    background-color: #000000;
+    color: #15C701;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+.terminal input {
+  font-family: Ubuntu Mono;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  color: #15C701;
+  width: 75%;
+  padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 10px;
+    margin: 0px;
+}
+.oldCommands {
+  position:fixed;
+  width: 100%;
+  bottom: 0px;
+  background-color: grey;
+  overflow-y: scroll;
+  height: 190px;
+}
+.oldCommands table {
+  box-shadow: none;
+}
+.oldCommands table,tr,th,td {
+  color: #15C701;
+  border: 1px solid #2c2c2c;
+  border-collapse: collapse;
+}
+.oldCommands table tr:nth-child(even) {
+  background-color: #4c4c4c;
+}
+.oldCommands table tr:nth-child(odd) {
+  background-color: #3c3c3c;
+}
+.oldCommands table tr:first-child{
+  position: relative;
+  background-color: #2c2c2c;
+}

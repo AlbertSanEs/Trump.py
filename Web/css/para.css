@@ -1,0 +1,14 @@
+form {
+  padding: 0 !important;
+}
+
+#error {
+  text-align: center !important;
+  width: 0p !important;
+  color: blue !important;
+  margin-left: 20% !important;
+}
+
+#primer {
+  margin-top: 5% !important;
+}

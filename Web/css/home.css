@@ -1,0 +1,846 @@
+@font-face {
+    font-family: CL;
+    src: url("../font/ChampagneLimousines.ttf");
+}
+
+body table tr td a {
+  font-size: 14px;
+}
+
+.term {
+    width: 26px;
+    height: 26px;
+    float: right !important;
+    margin-top: -26px;
+}
+
+@media screen and (min-device-width: 658px) {
+    @keyframes checked-anim {
+        50% {
+            width: 25%;
+            height: 100%;
+        }
+        100% {
+            width: 25%;
+            height: 100%;
+            border-bottom-right-radius: 5px;
+        }
+    }
+    @keyframes not-checked-anim {
+        0% {
+            width: 15%;
+            height: 100%;
+        }
+        100% {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    li,a {
+        /*margin: 75px 0 -55px 0;*/
+        color: white;
+        font: 14pt CL;
+        font-weight: 700;
+        line-height: 1.8;
+        text-decoration: none;
+        text-transform: none;
+        list-style: none;
+        outline: 0;
+        display: none;
+    }
+    li {
+      margin: 75px 0 -55px 0;
+        width: 230px;
+        text-indent: 56px;
+    }
+    a:focus {
+        display: block;
+        color: #333;
+        background-color: #eee;
+        transition: all .5s;
+    }
+    li a:hover {
+        background-color: #BDBDBD;
+        color: #333;
+    }
+    aside {
+        position: absolute;
+        color: white;
+        top: 35%;
+        right: 10%;
+        text-align: right;
+    }
+    h1 {
+        line-height: 0;
+        font-size: 4vw;
+        font-weight: 700;
+    }
+    h3 {
+        float: right;
+        line-height: .3;
+        font-size: 2.5vw;
+        font-weight: lighter;
+    }
+    h4 {
+        float: left;
+        margin-left: -2%;
+        font-size: 1.5vw;
+        font-weight: lighter;
+    }
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #222526;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: bottom;
+        font-family: 'CL';
+        overflow: hidden;
+    }
+    #trigger,
+    #burger,
+    #burger:before,
+    #burger:after {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        background: white;
+        width: 30px;
+        height: 5px;
+        transition: .2s ease;
+        cursor: pointer;
+        z-index: 1;
+    }
+    #trigger {
+        height: 25px;
+        background: none;
+    }
+    #burger:before {
+        content: " ";
+        top: 10px;
+        left: 0;
+    }
+    #burger:after {
+        content: " ";
+        top: 20px;
+        left: 0;
+    }
+    #menu-toggle:checked+#trigger+#burger {
+        top: 35px;
+        transform: rotate(180deg);
+        transition: transform .2s ease;
+    }
+    #menu-toggle:checked+#trigger+#burger:before {
+        width: 20px;
+        top: -2px;
+        left: 18px;
+        transform: rotate(45deg) translateX(-5px);
+        transition: transform .2s ease;
+    }
+    #menu-toggle:checked+#trigger+#burger:after {
+        width: 20px;
+        top: 2px;
+        left: 18px;
+        transform: rotate(-45deg) translateX(-5px);
+        transition: transform .2s ease;
+    }
+    #menu {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 110px;
+        height: 110px;
+        background-color: #555555;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+        animation: not-checked-anim .2s both;
+        transition: .2s;
+    }
+    #menu-toggle:checked+#trigger+#burger+#menu {
+        animation: checked-anim 1s ease both;
+    }
+    #menu-toggle:checked+#trigger~#menu>li,
+    a {
+        display: block;
+    }
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked {
+        display: none;
+    }
+    p {
+        color: white;
+        text-align: center;
+        margin-top: 5%;
+        font-size: 1.5em;
+    }
+    #gros {
+        width: 87%;
+        height: 1050px;
+        margin-top: 85px;
+        margin-left: 6.5%;
+    }
+    .mitja {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .mitja:nth-child(2) {
+        width: 100%;
+        height: auto;;
+        margin-top: 10px;
+        display: flex;
+        background-color: red;
+    }
+
+    table {
+        text-align: center;
+        background-color: #212121;
+        width: 100%;
+        padding: 20px 20px 0px 20px;
+        border-radius: 5px;
+        color: white;
+        box-shadow: 0px 0px 30px 10px purple;
+    }
+
+    table tr, table td{
+      padding: 10px;
+    }
+}
+
+@media screen and (min-device-width: 516px) and (max-device-width: 657px) {
+    @keyframes checked-anim {
+        50% {
+            width: 25%;
+            height: 100%;
+        }
+        100% {
+            width: 25%;
+            height: 100%;
+            border-bottom-right-radius: 5px;
+        }
+    }
+    @keyframes not-checked-anim {
+        0% {
+            width: 15%;
+            height: 100%;
+        }
+        100% {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    li,
+    a {
+        /*margin: 75px 0 -55px 0;*/
+        color: white;
+        font: 14pt CL;
+        font-weight: 700;
+        line-height: 1.8;
+        text-decoration: none;
+        text-transform: none;
+        list-style: none;
+        outline: 0;
+        display: none;
+    }
+    li {
+      margin: 75px 0 -55px 0;
+        width: 230px;
+        text-indent: 56px;
+    }
+    a:focus {
+        display: block;
+        color: #333;
+        background-color: #eee;
+        transition: all .5s;
+    }
+    li a:hover {
+        background-color: #BDBDBD;
+        color: #333;
+    }
+    aside {
+        position: absolute;
+        color: white;
+        top: 35%;
+        right: 10%;
+        text-align: right;
+    }
+    h1 {
+        line-height: 0;
+        font-size: 4vw;
+        font-weight: 700;
+    }
+    h3 {
+        float: right;
+        line-height: .3;
+        font-size: 2.5vw;
+        font-weight: lighter;
+    }
+    h4 {
+        float: left;
+        margin-left: -2%;
+        font-size: 1.5vw;
+        font-weight: lighter;
+    }
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #222526;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: bottom;
+        font-family: 'CL';
+        overflow: hidden;
+    }
+    #trigger,
+    #burger,
+    #burger:before,
+    #burger:after {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        background: white;
+        width: 30px;
+        height: 5px;
+        transition: .2s ease;
+        cursor: pointer;
+        z-index: 1;
+    }
+    #trigger {
+        height: 25px;
+        background: none;
+    }
+    #burger:before {
+        content: " ";
+        top: 10px;
+        left: 0;
+    }
+    #burger:after {
+        content: " ";
+        top: 20px;
+        left: 0;
+    }
+    #menu-toggle:checked+#trigger+#burger {
+        top: 35px;
+        transform: rotate(180deg);
+        transition: transform .2s ease;
+    }
+    #menu-toggle:checked+#trigger+#burger:before {
+        width: 20px;
+        top: -2px;
+        left: 18px;
+        transform: rotate(45deg) translateX(-5px);
+        transition: transform .2s ease;
+    }
+    #menu-toggle:checked+#trigger+#burger:after {
+        width: 20px;
+        top: 2px;
+        left: 18px;
+        transform: rotate(-45deg) translateX(-5px);
+        transition: transform .2s ease;
+    }
+    #menu {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 110px;
+        height: 110px;
+        background-color: #555555;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+        animation: not-checked-anim .2s both;
+        transition: .2s;
+    }
+    #menu-toggle:checked+#trigger+#burger+#menu {
+        animation: checked-anim 1s ease both;
+    }
+    #menu-toggle:checked+#trigger~#menu>li,
+    a {
+        display: block;
+    }
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked {
+        display: none;
+    }
+    p {
+        color: white;
+        text-align: center;
+        margin-top: 5%;
+        font-size: 1.5em;
+    }
+    #gros {
+        width: 87%;
+        height: 1050px;
+        margin-top: 85px;
+        margin-left: 6.5%;
+    }
+    .mitja {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .mitja:nth-child(2) {
+        width: 100%;
+        height: auto;;
+        margin-top: 10px;
+        display: flex;
+        background-color: red;
+    }
+
+    table {
+        text-align: center;
+        background-color: #212121;
+        width: 100%;
+        padding: 20px 20px 0px 20px;
+        border-radius: 5px;
+        color: white;
+        box-shadow: 0px 0px 30px 10px purple;
+    }
+
+    table tr, table td{
+      padding: 10px;
+      font-size: 14px;
+    }
+}
+/*
+@media screen and (min-device-width: 516px) and (max-device-width: 582px) {
+    @keyframes checked-anim {
+        50% {
+            width: 40%;
+            height: 100%;
+        }
+        100% {
+            width: 40%;
+            height: 100%;
+            border-bottom-right-radius: 5px;
+        }
+    }
+    @keyframes not-checked-anim {
+        0% {
+            width: 15%;
+            height: 100%;
+        }
+        100% {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    li,
+    a {
+        color: white;
+        font: 14pt CL;
+        font-weight: 700;
+        line-height: 1.8;
+        text-decoration: none;
+        text-transform: none;
+        list-style: none;
+        outline: 0;
+        display: none;
+    }
+    li {
+      margin: 75px 0 -55px 0;
+        width: 230px;
+        text-indent: 56px;
+    }
+    a:focus {
+        display: block;
+        color: #333;
+        background-color: #eee;
+        transition: all .5s;
+    }
+    li a:hover {
+        background-color: #BDBDBD;
+        color: #333;
+    }
+    aside {
+        position: absolute;
+        color: white;
+        top: 35%;
+        right: 10%;
+        text-align: right;
+    }
+    h1 {
+        line-height: 0;
+        font-size: 4vw;
+        font-weight: 700;
+    }
+    h3 {
+        float: right;
+        line-height: .3;
+        font-size: 2.5vw;
+        font-weight: lighter;
+    }
+    h4 {
+        float: left;
+        margin-left: -2%;
+        font-size: 1.5vw;
+        font-weight: lighter;
+    }
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #222526;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: bottom;
+        font-family: 'CL';
+        overflow: hidden;
+    }
+    #trigger,
+    #burger,
+    #burger:before,
+    #burger:after {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        background: white;
+        width: 30px;
+        height: 5px;
+        transition: .2s ease;
+        cursor: pointer;
+        z-index: 1;
+    }
+    #trigger {
+        height: 25px;
+        background: none;
+    }
+    #burger:before {
+        content: " ";
+        top: 10px;
+        left: 0;
+    }
+    #burger:after {
+        content: " ";
+        top: 20px;
+        left: 0;
+    }
+    #menu-toggle:checked+#trigger+#burger {
+        top: 35px;
+        transform: rotate(180deg);
+        transition: transform .2s ease;
+    }
+    #menu-toggle:checked+#trigger+#burger:before {
+        width: 20px;
+        top: -2px;
+        left: 18px;
+        transform: rotate(45deg) translateX(-5px);
+        transition: transform .2s ease;
+    }
+    #menu-toggle:checked+#trigger+#burger:after {
+        width: 20px;
+        top: 2px;
+        left: 18px;
+        transform: rotate(-45deg) translateX(-5px);
+        transition: transform .2s ease;
+    }
+    #menu {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 110px;
+        height: 110px;
+        background-color: #555555;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+        animation: not-checked-anim .2s both;
+        transition: .2s;
+    }
+    #menu-toggle:checked+#trigger+#burger+#menu {
+        animation: checked-anim 1s ease both;
+    }
+    #menu-toggle:checked+#trigger~#menu>li,
+    a {
+        display: block;
+    }
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked {
+        display: none;
+    }
+    p {
+        color: white;
+        text-align: center;
+        margin-top: 5%;
+        font-size: 1.5em;
+    }
+    #gros {
+        width: 87%;
+        height: 1050px;
+        margin-top: 85px;
+        margin-left: 6.5%;
+    }
+    .mitja {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .mitja:nth-child(2) {
+        width: 100%;
+        height: auto;;
+        margin-top: 10px;
+        display: flex;
+        background-color: red;
+    }
+
+    table {
+        text-align: center;
+        background-color: #212121;
+        width: 100%;
+        padding: 20px 20px 0px 20px;
+        border-radius: 5px;
+        color: white;
+        box-shadow: 0px 0px 30px 10px purple;
+    }
+
+    table tr, table td{
+      padding: 10px;
+      font-size: 12px;
+    }
+}
+*/
+@media screen and (max-device-width: 515px) {
+    @keyframes checked-anim {
+        50% {
+            width: 95%;
+            height: 95%;
+        }
+        100% {
+            width: 97%;
+            height: 98%;
+            border-bottom-right-radius: 5px;
+        }
+    }
+    @keyframes not-checked-anim {
+        0% {
+            width: 100%;
+            height: 100%;
+        }
+        100% {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    #menu li a, #burger a {
+      margin: 75px 0 -55px 0;
+    }
+
+    li,
+    a {
+        color: white;
+        font: 14pt CL;
+        font-weight: 700;
+        line-height: 1.8;
+        text-decoration: none;
+        text-transform: none;
+        list-style: none;
+        outline: 0;
+        display: none;
+    }
+    li {
+        width: 230px;
+        text-indent: 56px;
+        padding-left: 20px;
+    }
+    li:first-child {
+        width: 230px;
+        text-indent: 56px;
+        padding-top: 20px;
+        margin: 75px 0 -55px 0;
+    }
+
+    li:last-child {
+        width: 230px;
+        text-indent: 56px;
+        padding-left: 20px;
+        padding-bottom: 180px;
+    }
+    a:focus {
+        display: block;
+        color: #333;
+        background-color: #eee;
+        transition: all .5s;
+    }
+    li a:hover {
+        background-color: #BDBDBD;
+        color: #333;
+    }
+    aside {
+        position: absolute;
+        color: white;
+        top: 35%;
+        right: 10%;
+        text-align: right;
+    }
+    h1 {
+        line-height: 0;
+        font-size: 4vw;
+        font-weight: 700;
+    }
+    h3 {
+        float: right;
+        line-height: .3;
+        font-size: 2.5vw;
+        font-weight: lighter;
+    }
+    h4 {
+        float: left;
+        margin-left: -2%;
+        font-size: 1.5vw;
+        font-weight: lighter;
+    }
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #222526;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: bottom;
+        font-family: 'CL';
+        overflow: hidden;
+    }
+    #trigger,
+    #burger,
+    #burger:before,
+    #burger:after {
+      position: fixed;
+        top: 12px;
+        left: 10px;
+        background: white;
+        width: 30px;
+        height: 5px;
+        transition: .2s ease;
+        cursor: pointer;
+        z-index: 1;
+    }
+    #trigger {
+        height: 25px;
+        background: none;
+        position: fixed;
+    }
+    #burger:before {
+        content: " ";
+        top: 22px;
+    }
+    #burger:after {
+        content: " ";
+        top: 32px;
+    }
+    #menu-toggle:checked+#trigger+#burger {
+        top: 35px;
+        transform: rotate(180deg);
+        transition: transform .2s ease;
+    }
+    #menu-toggle:checked+#trigger+#burger:before {
+        width: 20px;
+        top: -2px;
+        left: 18px;
+        transform: rotate(45deg) translateX(-5px);
+        transition: transform .2s ease;
+    }
+    #menu-toggle:checked+#trigger+#burger:after {
+        width: 20px;
+        top: 2px;
+        left: 18px;
+        transform: rotate(-45deg) translateX(-5px);
+        transition: transform .2s ease;
+    }
+    #menu {
+        margin: -75px -50px 0 -50px;
+        padding: 0px 0px 185px 0px;
+        width: 110px;
+        height: 110px;
+        background-color: #555555;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+        animation: not-checked-anim .2s both;
+        transition: .2s;
+    }
+    #menu-toggle:checked+#trigger+#burger+#menu {
+        animation: checked-anim 1s ease both;
+    }
+    #menu-toggle:checked+#trigger~#menu>li,
+    a {
+        display: block;
+    }
+    [type="checkbox"]:not(:checked),
+    [type="checkbox"]:checked {
+        display: none;
+    }
+    p {
+        color: white;
+        text-align: center;
+        margin-top: 5%;
+        font-size: 1.5em;
+    }
+    #gros {
+        width: 87%;
+        height: 450px;
+        margin: 85px auto;
+    }
+    .mitja {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        display: flex;
+    }
+
+    .mitja:nth-child(2) {
+        width: 100%;
+        height: auto;;
+        margin-top: 10px;
+        display: flex;
+        background-color: red;
+    }
+
+    table {
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        border-radius: 5px;
+        color: white;
+        position: absolute;
+        height: 300px;
+        margin-top: -200px;
+    }
+    table tr{
+      text-align: right;
+    }
+
+    table tr:first-child{
+      padding: 32px 30px;
+      font-size: 14px;
+      display: block;
+      width: 150px;
+      margin: 0 0 0 -80px;
+      transform: rotate(90deg);
+      position: fixed;
+      text-align: center;
+    }
+
+    table th:last-child{
+      padding-top: 75px;
+    }
+
+    tr td:nth-child(4){
+      padding-top: 30px;
+    }
+
+    tr td:last-child{
+      padding-bottom: 65px;
+    }
+
+    table td{
+      font-size: 14px;
+      display: block;
+      padding: 22px;
+    }
+    table th {
+      transform: rotate(-90deg);
+    }
+}
